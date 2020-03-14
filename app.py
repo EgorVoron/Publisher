@@ -10,7 +10,7 @@ CORS(app, supports_credentials=True, origin='http://localhost:8080')
 
 @app.route('/', methods=['GET'])
 def main():
-    return send_from_directory(filename='templates/main.html', directory='')
+    return send_from_directory(filename='templates/index.html', directory='')
 
 
 @app.route('/taylor', methods=['GET'])
